@@ -1,0 +1,25 @@
+package datastructures;
+
+import java.util.Scanner;
+
+public class isbitsetornot {
+	
+	    public static void isithBitSet(int n, 
+	                                   int i) 
+	    { 
+	        if ((1 & (n >> (i - 1))) == 1) 
+	            System.out.print("SET"); 
+	        else
+	            System.out.print("NOT SET"); 
+	    } 
+	  
+	    public static void main(String[] args) 
+	    { 
+	        
+	        Scanner sc=new Scanner(System.in);
+			int n=sc.nextInt();
+			int i=sc.nextInt();
+	        isithBitSet(n, i); 
+	    } 
+	} 
+
